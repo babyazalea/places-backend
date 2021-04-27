@@ -5,7 +5,6 @@ const HttpError = require("../models/http-error");
 const getCoordsForAddress = require("../util/location");
 const Place = require("../models/place");
 const User = require("../models/user");
-const mongooseUniqueValidator = require("mongoose-unique-validator");
 
 const getPlaceById = async (req, res, next) => {
   const placeId = req.params.pid;
